@@ -127,3 +127,7 @@
     width: 77%;
   }
 }
+
+.hidden-btn {
+  display: none;
+}
