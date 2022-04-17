@@ -39,7 +39,11 @@ async function mintNFT(amount) {
       to: contractAddress, // Required except during contract publications.
       from: window.ethereum.selectedAddress, // must match user's active address.
       value: ""+(amount*_cost),
-    });
+    }).then( () => {
+      contractInstance.methods.totalSupply().call().then( function(_supply) {
+        $('.total-mints').text(_supply);
+      });
+    })
   });
 }
 
@@ -47,6 +51,12 @@ function _mintNFT() {
   // console.log("num is "+$(".nft-num").val());
   mintNFT($(".nft-num").val());
 }
+var oneMintCost = 0;
+
+contractInstance.methods.cost().call().then( function(_cost) {
+  oneMintCost = _cost/10**18;
+  $('#price').text(oneMintCost);
+});
 
 function MintNft() {
 
@@ -56,7 +66,14 @@ function MintNft() {
   const [connButtonText, setConnButtonText] = useState("Connect Wallet");
   const [count, setCount] = useState(1);
   const [amount, setAmount] = useState(0);
-  const [mintCost, setMintCost] = useState(0.069);
+  const [mintCost, setMintCost] = useState(0);
+  contractInstance.methods.cost().call().then( function(_cost) {
+    setAmount(_cost/10**18);
+    setMintCost(_cost/10**18);
+  });
+
+  console.log("mint cost is "+mintCost);
+
   const [imageAdress, setImageAdress] = useState("");
 
   const connectWalletHandler = () => {
@@ -120,15 +137,19 @@ function MintNft() {
   const increment = () => {
     if (count < 10) {
       setCount(count + 1);
-      setAmount(amount + 0);
+      // var cost = mintCost;
+      // setAmount(totalCost + oneMintCost);
+      $('#price').text(oneMintCost*(count+1));
     }
   };
 
   const decrement = () => {
     if (count > 1) {
       setCount(count - 1);
-      var _cost = mintCost;
-      setAmount(amount - 0);
+      // var cost = mintCost;
+      // setAmount(totalCost - oneMintCost);
+      $('#price').text(oneMintCost*(count-1));
+      // console.log("dec price after is", $('#price').val())
     }
   };
 
@@ -290,7 +311,7 @@ function MintNft() {
           >
             <h1 className="text-white">Mint NFT</h1>
             <p className="font-700 primary_color my-0 font-lg">
-              <span id="price">{`${amount}`}</span> ETH
+              <span id="price"></span> ETH
             </p>
             <div className="input__div col-6 d-flex margin_78 my-2">
               <div className="w-100">
@@ -327,7 +348,7 @@ function MintNft() {
             </button>
 
             <p className="primary_color font-lg font-700">
-              <span className="total-mints">0000</span> / <span>10000</span>
+              <span className="total-mints"></span> / <span>10000</span>
             </p>
             <Link className="hjs" to="/">
               Go Home
