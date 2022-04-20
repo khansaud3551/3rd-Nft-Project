@@ -500,14 +500,6 @@ function _mintNFT() {
 }
 var oneMintCost = 0;
 
-contractInstance.methods
-  .cost()
-  .call()
-  .then(function (_cost) {
-    oneMintCost = _cost / 10 ** 18;
-    $("#price").text(oneMintCost);
-  });
-
 function MintNft() {
   const [errorMessage, setErrorMessage] = useState(null);
   const [defaultAccount, setDefaultAccount] = useState(null);
@@ -525,6 +517,14 @@ function MintNft() {
     });
 
   useEffect(() => {
+    contractInstance.methods
+      .cost()
+      .call()
+      .then(function (_cost) {
+        oneMintCost = _cost / 10 ** 18;
+        $("#price").text(oneMintCost);
+      });
+
     contractInstance.methods
       .totalSupply()
       .call()
