@@ -500,14 +500,6 @@ function _mintNFT() {
 }
 var oneMintCost = 0;
 
-contractInstance.methods
-  .cost()
-  .call()
-  .then(function (_cost) {
-    oneMintCost = _cost / 10 ** 18;
-    $("#price").text(oneMintCost);
-  });
-
 function MintNft() {
   const [errorMessage, setErrorMessage] = useState(null);
   const [defaultAccount, setDefaultAccount] = useState(null);
@@ -530,6 +522,14 @@ function MintNft() {
       .call()
       .then(function (_supply) {
         $(".total-mints").text(_supply);
+      });
+
+    contractInstance.methods
+      .cost()
+      .call()
+      .then(function (_cost) {
+        oneMintCost = _cost / 10 ** 18;
+        $("#price").text(oneMintCost);
       });
   }, []);
 
@@ -770,9 +770,9 @@ function MintNft() {
               type: "spring",
               stiffness: 100,
             }}
-            className="col-md-6 bg_con2 b898 pb-3 py-md-5  d-flex flex-column align-items-center justify-content-center "
+            className="col-md-6 bg_con2 b898 pb-3 py-4 py-md-5  d-flex flex-column align-items-center justify-content-center  "
           >
-            <h1 className="text-white">Mint NFT</h1>
+            <h1 className="text-white ">Mint NFT</h1>
             <p className="font-700 primary_color my-0 font-lg">
               <span id="price"></span> ETH
             </p>
@@ -810,7 +810,14 @@ function MintNft() {
             <p className="primary_color font-lg font-700">
               <span className="total-mints"></span> / <span>10000</span>
             </p>
-            <Link className="hjs" to="/">
+            <Link
+              className="hjs mb-2 mb-md-0"
+              style={{
+                borderBottomLeftRadius: "10px",
+                borderBottomRightRadius: "10px",
+              }}
+              to="/"
+            >
               Go Home
             </Link>
           </motion.div>

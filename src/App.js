@@ -1,11 +1,9 @@
 import "./App.css";
 import Banner from "./Banner";
 import Card from "./components/Card";
-import Content1 from "./components/Content1";
-import Content2 from "./components/Content2";
+
 import Content3 from "./components/Content3";
 import Faqs from "./components/FAQS";
-import Rarity from "./components/Rarity";
 import Team from "./components/Team";
 import Header from "./Header";
 import AOS from "aos";
@@ -22,6 +20,12 @@ import {
   useLocation,
 } from "react-router-dom";
 import MintNft from "./MintNft";
+import BannerCard1 from "./components/BannerCard1";
+import BannerCard2 from "./components/BannerCard2";
+import Footer from "./components/Footer";
+import BannerCard3 from "./components/BannerCard2";
+import FoundingFkers from "./components/FoundingFkers";
+import OurMission from "./components/OurMission";
 
 function App() {
   useEffect(() => {
@@ -41,34 +45,19 @@ function App() {
             <>
               <Header />
               <Banner />
-              <Content1 />
-              <Content2 />
-              <Content3 />
-              <Content4 />
-
+              <BannerCard1 />
+              <BannerCard2 />
+              <FoundingFkers />
+              <OurMission />
               <Card />
-
-              <Team />
               <Content5 />
               <Faqs />
+              <Footer />
             </>
           }
         ></Route>
         <Route path="/mint" element={<MintNft />}></Route>
       </Routes>
-      {/* <Header />
-      <Banner />
-      <Content1 />
-      <Content2 />
-      <Content3 />
-      <Content4 />
-
-      <Card />
-      <Rarity />
-
-      <Team />
-      <Content5 />
-      <Faqs /> */}
     </div>
   );
 }

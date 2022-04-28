@@ -2,42 +2,45 @@ import React from "react";
 
 function Card() {
   return (
-    <div className="container-fluid p-0 banner__image2">
+    <div className="container-fluid section_marg p-0 banner__image2">
       <img className="w-100 card__img " src="assets/banner2.png" alt="" />
       <div className="banner__layer pl-md-4 col-12 col-sm-10 col-md-10 col-lg-7 row text-white pe-0">
         <h1
           data-aos="zoom-in-left"
-          className="w-100 text-center col-12 text-white text670 m-0"
+          className="w-100 d-flex justify-content-center align-items-center text-center col-12 text-white text670 m-0"
         >
-          Utility:
+          About Utilities
         </h1>
 
         <div className="">
-          <ul className="a" data-aos="zoom-in-left">
-            <li> Web3 Avatar</li>
+          <ol className="a" data-aos="zoom-in-left">
+            <li>Web3 Avatar</li>
             <li>Digital Art Collection</li>
-            <li>Pass to Fkers' Community</li>
-            <li> Access to Surprise Drops.</li>
-            <li>Just use your imagination as it's under CC0 license. ‍</li>
-          </ul>
+            <li>Pass to Fkers' Exclusive Community and Events</li>
+            <li>Access to future Fkers Drops.</li>
+            <li>More to come. ‍</li>
+          </ol>
         </div>
 
         <h1
           data-aos="zoom-in-left"
-          className="w-100 text-center col-12 text-white text670 m-0"
+          className="w-100 d-flex justify-content-center align-items-center col-12 text-white text670 m-0"
         >
-          MindMap
+          Future Mindmap
         </h1>
 
         <div className=" ">
-          <ul className="a" data-aos="zoom-in-left">
-            <li>Rage Fkers Drop</li>
-            <li>Some Cool Rage Fkers' Derivatives</li>
-            <li>Random Rage Fkers Comics</li>
-            <li> Maybe a Fker's Dao?</li>
+          <ol className="a" data-aos="zoom-in-left">
+            <li>Crypto Fkers Drop</li>
+            <li>Surprise Fkers' Derivatives Drop to Holders</li>
+            <li>Fkers Apparels</li>
+            <li>Maybe a Fkers' Dao?</li>
             <li>and some FvF(Fkers versus Fkers) games?</li>
-            <li>more adventures and possibilities.</li>
-          </ul>
+            <li>
+              more adventures and possibilities built together by Fkers
+              community.
+            </li>
+          </ol>
         </div>
 
         {/* <div className="d-flex justify-content-center ">

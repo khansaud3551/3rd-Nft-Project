@@ -13,30 +13,30 @@ function Banner() {
         alt=""
       />
       <motion.div className="banner_cont d-flex  g_sa flex-column flex-md-row ">
-        <motion.button
+        {/* <motion.button
           initial={{ y: -1000 }}
-          animate={{ y: 0 }}
+          animate={{ y: 0, rotate: -10 }}
           transition={{ type: "spring", stiffness: 130 }}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.1, rotate: 0 }}
           id="mydiv"
-          className="col-md-6 div_style2"
+          className="col-md-6 div_style2 pos3k"
         >
-          Buy On Opensea
-        </motion.button>
-        <Link to={`/mint`} className="col-md-6   ">
+          Mint Nft
+        </motion.button> */}
+        <Link to={"/mint"} className="col-md-6 mnt_btn">
           <motion.button
             initial={{ y: -1000 }}
-            animate={{ y: 0 }}
-            transition={{ type: "spring", stiffness: 130 }}
-            whileHover={{ scale: 1.1 }}
+            animate={{ y: 0, rotate: -10 }}
+            transition={{ type: "spring", stiffness: 150 }}
+            whileHover={{ scale: 1.1, rotate: 0 }}
             id="mydiv"
-            className="w-100 h-100  div_style2"
+            className="col-6 div_style2 pos3k mnt_btn"
           >
-            Mint Nft
+            MINT NFT
           </motion.button>
         </Link>
       </motion.div>
-      <div className="overlay_item"></div>
+      <div className="overlay_item12"></div>
     </div>
   );
 }

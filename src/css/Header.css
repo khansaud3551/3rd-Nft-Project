@@ -3,9 +3,19 @@ nav.navbars {
   color: var(--secondary);
 }
 
+.navbars {
+  position: relative;
+  box-shadow: rgb(164 80 18) 0px 5px 15px;
+  z-index: 10000;
+}
+
 .nav-links {
   color: var(--secondary);
-  font-size: 36px;
+  font-size: 25px;
+}
+
+.nav-items {
+  display: flex;
 }
 
 /* .logo {
@@ -17,7 +27,7 @@ nav.navbars {
 }
 
 .logo__title {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 600;
   margin-top: 0px !important;
   color: var(--secondary);
@@ -29,7 +39,7 @@ nav.navbars {
 }
 
 .nav__icon {
-  font-size: 36px;
+  font-size: 30px;
   color: var(--secondary);
 }
 
@@ -42,7 +52,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 67%;
+  width: 72%;
   margin: 0 auto;
   padding: 0.7rem 0.9rem;
   color: var(--primary);
@@ -120,7 +130,7 @@ a {
     margin-right: 0;
     position: absolute;
     width: 75%;
-    background: #3a3a3a;
+    background: var(--primary);
     z-index: 130;
     margin-top: 3rem;
     float: right;

@@ -1,21 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Content5() {
   return (
-    <motion.div className="container-fluid px-0 bg__blue">
-      <div className="container h_main d-flex align-items-center">
-        <div className="row d-flex align-items-center">
-          <div className="col-md-7 text-left">
-            <h2 className="text-left" data-aos="zoom-in-up">
-              About Copyrights: CC0 License
+    <div className="container-fluid px-0 bg__blue section_marg ">
+      {/* <div className="container h_main d-flex align-items-center bg-new border_rad3g px-3 px-md-0">
+        <div className="row d-flex align-items-center ">
+          <div className="col-md-7 text-left pl-md-5">
+            <h2
+              className="text-left"
+              data-aos="zoom-in-up"
+              data-aos-duration="1500"
+            >
+              Our Mission 🏆
             </h2>
             <p className="line" data-aos="fade-right">
-              CC0 means that creators waive those interests in their works and
-              thereby place them as completely as possible in the public domain,
-              so everyone may freely build upon, enhance and reuse the works for
-              any purposes without restriction under copyright or. So in short,
-              CC0 enables you do whatever you want with your RageFkers.
+              <ol>
+                <li>Create a Fxxking Awesome Crypto & NFT community.</li>
+                <li>
+                  Make Fkers a Superb Web3 Brand in Metaverse as well as in Real
+                  Life.
+                </li>
+              </ol>
             </p>
           </div>
 
@@ -28,16 +36,16 @@ function Content5() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <img
         data-aos="zoom-out-right"
         delay="1000"
-        className="w-100 d-flex"
+        className="w-100 d-flex img_5b"
         src="assets/banner3.png"
         alt=""
       />
-    </motion.div>
+    </div>
   );
 }
 

@@ -2,15 +2,10 @@
   font-family: "BPchildLefty";
   src: local("BPchildLefty"),
     url("/public/fonts/BPchildLefty.ttf") format("truetype");
-  /* src: url("/public/fonts/BPchildLefty.ttf") format("open"); */
-  /* url("/public/fonts/Quicksand-Light.woff") format("woff"); */
-  font-weight: 300;
-  font-style: normal;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+  /* src: url("/public/fonts/BPchildLefty.ttf") format("open");
+  url("/public/fonts/Quicksand-Light.woff") format("woff"); */
+  /* font-weight: 300;
+  font-style: normal; */
 }
 
 body {
@@ -26,7 +21,8 @@ body {
     auto; */
 
   margin: 0;
-  font-family: "BPchildLefty";
+  /* font-family: "cheri.regular"; */
+  font-family: "Livvic", sans-serif;
 }
 
 * {
@@ -36,9 +32,9 @@ body {
 }
 
 :root {
-  --primary: #3a3a3a;
+  --primary: #280b30;
   --secondary: white;
-
+  --new: #601b71;
   --white: #ffffff;
   --dark: black;
 }
@@ -46,7 +42,13 @@ body {
 body {
   overflow-x: hidden;
   margin: 0;
-  color: var(--primary);
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+/* logo-title */
+.logo__title {
+  font-family: BPchildLefty;
 }
 
 /* Scroll bar */
@@ -81,6 +83,10 @@ body::-webkit-scrollbar-thumb {
   margin-top: 10px;
 }
 
+.bg-new {
+  background-color: var(--new);
+}
+
 .bi-twitter::before {
   margin-top: 10px;
 }
@@ -97,11 +103,16 @@ h4,
 h5,
 h6 {
   font-weight: 900;
-  color: black;
+  color: var(--white);
 }
 
 .App {
   overflow-x: hidden !important;
+}
+
+.section_marg {
+  margin-top: 130px !important;
+  margin-bottom: 130px !important;
 }
 
 p {
@@ -127,37 +138,47 @@ li > a:hover {
 }
 
 p {
-  font-size: 29px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
+.border_rad3g {
+  border-radius: 10px;
+}
+
+.pad_32 {
+  padding: 16px 10px;
+}
+
 h1 {
-  font-size: 75px;
-  color: black;
+  font-size: 49px;
+  color: var(--white);
 }
 
 h2 {
-  font-size: 55px;
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
 .container {
-  width: 88% !important;
-}
-
-p {
-  line-height: 1.8;
+  width: 90% !important;
 }
 
 .font_3gd {
   font-size: 30px;
+  font-weight: 600;
 }
 
 .font_2g {
-  font-size: 24px;
-  font-weight: 600;
-  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.team_p {
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .text-black {
@@ -170,10 +191,10 @@ p {
 
 @media (max-width: 1484px) {
   .navbar-container {
-    width: 80% !important;
+    width: 84% !important;
   }
   .logo__title {
-    font-size: 42px !important;
+    font-size: 55px !important;
   }
 }
 
@@ -196,6 +217,12 @@ p {
   .text679 {
     font-size: 34px !important;
   }
+  .pos3k {
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1256px) {
@@ -215,7 +242,7 @@ p {
   .container-lg,
   .container-md,
   .container-sm {
-    max-width: 1200px;
+    max-width: 1280px;
   }
 }
 
@@ -230,8 +257,8 @@ p {
   border-radius: 10px;
   outline: none;
   color: var(--secondary);
-  font-size: 36px;
-  border: 4px solid var(--primary) !important;
+  font-size: 30px;
+  border: 3px solid var(--white) !important;
   line-height: 56px;
   font-weight: 700;
 }
@@ -282,11 +309,24 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-left: 0rem;
   }
 
+  .faqs > h2 {
+    font-size: 26px !important;
+  }
+
+  .team p {
+    text-align: center !important;
+  }
+
+  .section_marg {
+    margin-top: 73px !important;
+    margin-bottom: 73pxF !important;
+  }
+
   .navbar-container {
     max-width: 100% !important;
   }
   .logo__title {
-    font-size: 40px !important;
+    font-size: 33px !important;
   }
   .banner_btn {
     font-size: 20px !important;
@@ -295,8 +335,8 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 600px !important;
   }
   h1 {
-    font-size: 50px;
-    color: black;
+    font-size: 36px;
+    color: var(--white);
   }
   .h_main {
     padding-top: 37px !important;
@@ -307,11 +347,21 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   p {
     text-align: start;
-    font-size: 21px;
+    font-size: 17px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 32px;
     text-align: start;
+  }
+
+  .img_5b {
+    height: 417px;
+    margin-top: 63px;
+    object-fit: cover;
+  }
+
+  .faqs__heading {
+    font-size: 65px !important;
   }
 }
 
@@ -323,7 +373,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 22px !important;
   }
   .text670 {
-    font-size: 43px;
+    font-size: 35px;
   }
 }
 
@@ -336,7 +386,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media (max-width: 1400px) {
   li {
-    font-size: 25px !important;
+    font-size: 18px !important;
   }
 }
 
@@ -345,7 +395,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 44px;
   }
   li {
-    font-size: 55px !important;
+    font-size: 44px !important;
   }
 }
 
