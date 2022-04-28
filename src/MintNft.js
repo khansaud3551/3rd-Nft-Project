@@ -5,12 +5,12 @@ import $ from "jquery";
 import { ethers } from "ethers";
 import { Link } from "react-router-dom";
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
-// const web3 = createAlchemyWeb3(
-//   "wss://eth-mainnet.alchemyapi.io/v2/ifzyXSjPF_OGffl3dZHF8cqSUCDH0dbR"
-// );
 const web3 = createAlchemyWeb3(
-  "wss://eth-rinkeby.alchemyapi.io/v2/keC7ZRcIgiotApUd960gwire8vcu5YMa"
+  "wss://eth-mainnet.alchemyapi.io/v2/yQpS7U702nxSlPVWdhyc9t-mGcwiDlV1"
 );
+// const web3 = createAlchemyWeb3(
+//   "wss://eth-rinkeby.alchemyapi.io/v2/keC7ZRcIgiotApUd960gwire8vcu5YMa"
+// );
 
 const contractABI = [
   {
@@ -458,7 +458,7 @@ const contractABI = [
 ];
 // console.log(contractABI);
 
-const contractAddress = "0x879CC2CaF85f7B770b9220cFf7ECa20803Ea37B4";
+const contractAddress = "0x237B23c1Cc1C135948e3264830aB078B871c1073";
 const contractInstance = new web3.eth.Contract(contractABI, contractAddress);
 
 // var mintCost = 5;
@@ -522,6 +522,7 @@ function MintNft() {
       .call()
       .then(function (_supply) {
         $(".total-mints").text(_supply);
+
       });
 
     contractInstance.methods
@@ -530,10 +531,9 @@ function MintNft() {
       .then(function (_cost) {
         oneMintCost = _cost / 10 ** 18;
         $("#price").text(oneMintCost);
+        
       });
   }, []);
-
-  console.log("mint cost is " + mintCost);
 
   const [imageAdress, setImageAdress] = useState("");
 
@@ -583,7 +583,7 @@ function MintNft() {
   const chainChangedHandler = () => {
     window.ethereum.request({
       method: "wallet_switchEthereumChain",
-      params: [{ chainId: "0x4" }],
+      params: [{ chainId: "0x1" }],
     });
   };
 
