@@ -2,14 +2,13 @@ import "./App.css";
 import Banner from "./Banner";
 import Card from "./components/Card";
 
-import Content3 from "./components/Content3";
 import Faqs from "./components/FAQS";
-import Team from "./components/Team";
+
 import Header from "./Header";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Content4 from "./components/Content4";
+
 import Content5 from "./components/Content5";
 import {
   BrowserRouter,
