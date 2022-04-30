@@ -522,7 +522,6 @@ function MintNft() {
       .call()
       .then(function (_supply) {
         $(".total-mints").text(_supply);
-
       });
 
     contractInstance.methods
@@ -531,7 +530,6 @@ function MintNft() {
       .then(function (_cost) {
         oneMintCost = _cost / 10 ** 18;
         $("#price").text(oneMintCost);
-        
       });
   }, []);
 
@@ -773,7 +771,11 @@ function MintNft() {
             className="col-md-6 bg_con2 b898 pb-3 py-4 py-md-5  d-flex flex-column align-items-center justify-content-center  "
           >
             <h1 className="text-white ">Mint NFT</h1>
-            <p className="font-700 primary_color my-0 font-lg">
+
+            <p className="mb-0">Presale price : 0.05 ETH each</p>
+            <p className="mb-1">Max mint : 10 Crypto Fkers</p>
+
+            <p className="font-700 primary_color my-0 cush8">
               <span id="price"></span> ETH
             </p>
             <div className="input__div col-6 d-flex margin_78 my-2">
@@ -797,6 +799,7 @@ function MintNft() {
                 </button>
               </div>
             </div>
+
             <button
               className="connect-btn buttons col-md-5 btn my-3 py-2 bg-white my-2"
               onClick={connectWalletHandler}

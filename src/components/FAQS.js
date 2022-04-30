@@ -45,12 +45,13 @@ function Faqs() {
           Fkers merches, events, games and etc.
         </p>
 
-        <h2>8. What's ultimate goal of Crypto Fkers?</h2>
+        <h2>8. What's the mission of Crypto Fkers?</h2>
         <p className="m-0 pb-3">
           Our mission is to build a world-renowned web 3 brand and community
-          known as Crypto Fkers (or as Fkers in short). The value of Fkers brand
-          is a combination of meme culture, fine arts, decentralized crypto
-          community and a "don't give a fxxk" attitude.
+          known as Crypto Fkers (or Fkers in short). The value of Fkers is a
+          combination of meme culture, modern arts, crypto community and a
+          "don't give a fxxk" attitude. If you are into meme, crypto & NFT and
+          don't give a fxxk about others do or say, you are welcome to join us.
         </p>
       </div>
     </div>
