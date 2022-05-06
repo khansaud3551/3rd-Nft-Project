@@ -122,6 +122,19 @@
   margin: auto;
 }
 
+.hjdd {
+  color: white;
+  font-size: 20px;
+  padding: 5px 11px;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+.hjdd:hover {
+  color: #f99b07;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
   .w_img67g {
     width: 77%;

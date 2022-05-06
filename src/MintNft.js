@@ -823,6 +823,13 @@ function MintNft() {
             >
               Go Home
             </Link>
+            <a
+              className="hjdd"
+              href="https://etherscan.io/address/0x237b23c1cc1c135948e3264830ab078b871c1073"
+              target="_blank"
+            >
+              View Contract
+            </a>
           </motion.div>
         </motion.div>
       </div>

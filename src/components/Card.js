@@ -9,7 +9,7 @@ function Card() {
           data-aos="zoom-in-left"
           className="w-100 d-flex justify-content-center align-items-center text-center col-12 text-white text670 m-0"
         >
-          About Utilities
+          Fkers Utilities :
         </h1>
 
         <div className="">
@@ -26,18 +26,18 @@ function Card() {
           data-aos="zoom-in-left"
           className="w-100 d-flex justify-content-center align-items-center col-12 text-white text670 m-0"
         >
-          Future Mindmap
+          Fkers Roadmap :
         </h1>
 
         <div className=" ">
           <ol className="a" data-aos="zoom-in-left">
             <li>Crypto Fkers Drop</li>
-            <li>Surprise Fkers' Derivatives Drop to Holders</li>
-            <li>Fkers Apparels</li>
-            <li>Maybe a Fkers' Dao?</li>
-            <li>and some FvF(Fkers versus Fkers) games?</li>
+            <li>1st Fkers Derivatives Drop to Holders</li>
+            <li>Fkers Apparels Drop to Holders</li>
+            <li>A Fkers' Coin (Should we just name it $FKU?)</li>
+            <li>And FvF (Fkers versus Fkers) Games</li>
             <li>
-              more adventures and possibilities built together by Fkers
+              More adventures and possibilities built together by Fkers
               community.
             </li>
           </ol>
