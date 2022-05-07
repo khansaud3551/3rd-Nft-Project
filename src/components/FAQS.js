@@ -22,7 +22,7 @@ function Faqs() {
 
         <h2>2. What's the mint price?</h2>
         <p>
-          Presale Mint price is 0.05 ETH. Public Sale Mint price is 0.075 ETH.
+          Presale Sale price is 0.03 ETH. Public Sale price will be 0.06 ETH.
         </p>
 
         <h2>3. How many Crypto Fkers in total?</h2>
