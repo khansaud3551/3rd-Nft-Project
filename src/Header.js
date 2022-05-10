@@ -101,6 +101,9 @@ function Header() {
                   to="about"
                   spy={true}
                   smooth={true}
+                  onClick={(e) => {
+                    handleNavbarButton(e);
+                  }}
                 >
                   About
                 </Link>
@@ -121,6 +124,9 @@ function Header() {
                   spy={true}
                   smooth={true}
                   to="collection"
+                  onClick={(e) => {
+                    handleNavbarButton(e);
+                  }}
                 >
                   Collection
                 </Link>
@@ -141,6 +147,9 @@ function Header() {
                   to="faqs"
                   spy={true}
                   smooth={true}
+                  onClick={(e) => {
+                    handleNavbarButton(e);
+                  }}
                 >
                   FAQ
                 </Link>
@@ -154,6 +163,9 @@ function Header() {
                   stiffness: 120,
                 }}
                 className="nav-items"
+                onClick={(e) => {
+                  handleNavbarButton(e);
+                }}
               >
                 <a
                   href="https://discord.gg/yPdUgrSfvF"

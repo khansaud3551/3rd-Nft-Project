@@ -12,7 +12,7 @@ function OurMission() {
           <h2 className="text-left" data-aos="zoom-in-up" data-aos-delay="500">
             Extra Benefits for Crypto Fkers 🏆
           </h2>
-          <p className="line" data-aos="fade-right" data-aos-delay="500">
+          <div className="line" data-aos="fade-right" data-aos-delay="500">
             <p className="nm">
               As a holder of Crypto Fkers NFT , you will get 2 additional NFT
               drops:
@@ -29,7 +29,7 @@ function OurMission() {
                 under Fkers brand.
               </li>
             </ol>
-          </p>
+          </div>
         </div>
 
         <div className="col-md-6">
