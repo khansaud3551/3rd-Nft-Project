@@ -772,7 +772,7 @@ function MintNft() {
           >
             <h1 className="text-white ">Mint NFT</h1>
 
-            <p className="mb-0">Presale price : 0.05 ETH each</p>
+            <p className="mb-0">Presale price : 0.03 ETH each</p>
             <p className="mb-1">Max mint : 10 Crypto Fkers</p>
 
             <p className="font-700 primary_color my-0 cush8">

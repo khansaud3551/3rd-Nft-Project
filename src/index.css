@@ -331,8 +331,30 @@ input[type="number"]::-webkit-outer-spin-button {
   .banner_btn {
     font-size: 20px !important;
   }
+
+  .div_style2 {
+    line-height: 36px;
+    background-color: #280b30c7;
+    font-size: 20px;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    border-width: 2px !important;
+  }
+
+  .b898 {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .Mint {
+    height: 800px !important;
+  }
+
   .banner_img {
-    height: 600px !important;
+    height: 315px !important;
+    /* height: 600px !important; */
   }
   h1 {
     font-size: 36px;
