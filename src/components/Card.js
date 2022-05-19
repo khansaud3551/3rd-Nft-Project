@@ -33,11 +33,9 @@ function Card() {
           <ol className="a" data-aos="zoom-in-left">
             <li>Crypto Fkers Drop</li>
             <li>1st Fkers Derivatives Drop to Holders</li>
-            <li>Fkers Apparels Drop to Holders</li>
-            <li>A Fkers' Coin (Should we just name it $FKU?)</li>
-            <li>And FvF (Fkers versus Fkers) Games</li>
+            <li>1st Fkers Apparels Drop to Holders</li>
             <li>
-              More adventures and possibilities built together by Fkers
+              More adventures and possibilities built together with Fkers
               community.
             </li>
           </ol>
