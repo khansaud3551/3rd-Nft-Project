@@ -25,6 +25,7 @@ import Footer from "./components/Footer";
 import BannerCard3 from "./components/BannerCard2";
 import FoundingFkers from "./components/FoundingFkers";
 import OurMission from "./components/OurMission";
+import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
   useEffect(() => {
@@ -42,6 +43,7 @@ function App() {
           path="/"
           element={
             <>
+              <LoadingScreen />
               <Header />
               <Banner />
               <BannerCard1 />
