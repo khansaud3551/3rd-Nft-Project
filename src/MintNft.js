@@ -784,7 +784,7 @@ function MintNft() {
                   type="number"
                   className="input__style w-100 px-2 nft-num"
                   placeholder="0"
-                  readyonly
+                  readOnly
                   value={count}
                   onChange={(e) => setCount(e.target.value)}
                 />

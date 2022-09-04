@@ -39,7 +39,7 @@ nav.navbars {
 }
 
 .nav__icon {
-  font-size: 30px;
+  font-size: 43px;
   color: var(--secondary);
 }
 
@@ -86,7 +86,7 @@ ul.links-lists {
 
 li.nav-items {
   list-style-type: none;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 a {
